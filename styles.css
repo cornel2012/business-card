@@ -1,0 +1,99 @@
+body {
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card {
+    width: 220px;
+    /* 
+    Challenge:
+    Replace the two margin properties with a 
+    single margin shorthand.
+    */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    background: #ddebf8;
+    color: #2b2839;
+    border-top: 10px solid #B5BA72;
+    border-right: 4px solid #B5BA72;
+    border-bottom: 2px solid #B5BA72;
+    border-left: 2px solid #B5BA72;
+    border-radius: 10px;
+    box-shadow: 10px 13px 15px -12px rgba(0,0,0,0.2);
+}
+
+.avatar {
+    display: flex;
+    width: 200px;
+    border-radius: 10px;
+    margin: 10px auto 20px;
+}
+
+.avatar:hover {
+    transform-origin: center center; 
+    animation-name: swing; 
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    color: #4F359B;
+}
+
+.details h3,
+.details p,
+.details h4 {
+    margin: 10px auto;
+}
+
+.border-blue {
+    border: 1px dotted blue;
+}
+
+.card:hover .details {
+    color: #B5BA72;
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
+/*
+Final challenge:
+Download the code to your local computer and place it
+in a folder called "business-card"
+*/
+
+.animated { 
+    background-repeat: no-repeat;
+    background-position: left top; 
+    animation-duration: 500ms; 
+    animation-fill-mode: both; 
+}
+    
+@keyframes swing { 
+    20% { transform: rotate(10deg); } 
+    40% { transform: rotate(-8deg); } 
+    60% { transform: rotate(5deg); } 
+    80% { transform: rotate(-5deg); } 
+    100% { transform: rotate(0deg); } 
+}
+    
+/* .swing { 
+    transform-origin: center center; 
+    animation-name: swing; 
+} */
